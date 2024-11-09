@@ -1,0 +1,62 @@
+main.kedua {
+    background-color: rgb(217, 238, 225);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5px;
+}
+
+main.kedua .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.kiri {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 555px;
+
+}
+
+section.kiri h1 {
+    font-size: 100px;
+    line-height: 150px;
+    font-weight: 700;
+
+}
+
+section.kiri p {
+    font-size: 19px;
+    line-height: 29px;
+    font-weight: 400;
+    font-weight: bold;
+}
+
+section.kiri a {
+    text-decoration: none;
+}
+
+.tut-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    font-size: 18px;
+    margin: auto;
+    width: 200px;
+    padding: 10px 10px;
+    background-color: #04AA6D;
+    color: white;
+}
+
+section.kanan {
+    width: 555px;
+    height: 452px;
+    background-color: rgb(29, 42, 53);
+    ;
+}

@@ -1,0 +1,115 @@
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 75px;
+    background-color: rgb(29, 42, 53);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    z-index: 999;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #ddd;
+}
+
+.ulpertama {
+    justify-content: left;
+}
+
+.ulpertama img {
+    display: inline-block;
+    max-height: 50px;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+.ulpertama li a {
+    margin: 0 5px;
+    line-height: 27px;
+    padding: 24px 15px;
+    position: relative;
+}
+
+.ulpertama li a::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 5px solid white;
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 35px;
+    right: 1px;
+}
+
+.ulpertama li a:hover {
+    background-color: rgb(4, 170, 109);
+}
+
+.ulpertama li a:hover::after {
+    background-color: rgb(4, 170, 109);
+    transform: rotate(0deg);
+    bottom: 30px;
+}
+
+.ulpertama li:nth-child(5) a::after {
+    content: "";
+    display: none;
+}
+
+/* UL kedua */
+
+.ulkedua {
+    justify-content: right;
+}
+
+.ulkedua span i {
+    margin: 10px;
+}
+
+
+ul.ulkedua li a {
+    color: black;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+ul.ulkedua li:nth-child(2) a {
+    background-color: rgb(255, 192, 199);
+}
+
+ul.ulkedua li:nth-child(3) a {
+    background-color: rgb(255, 244, 163);
+}
+
+ul.ulkedua li:nth-child(4) a {
+    background-color: rgb(4, 170, 109);
+    padding: 10px 30px;
+    color: white;
+}
+
+/* div {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid red;
+    transform: rotate(30deg);
+} */
